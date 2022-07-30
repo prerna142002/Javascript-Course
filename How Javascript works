@@ -1,0 +1,12 @@
+Happens in Execution Context. - Can consider it the container that contains and in which the whole code executes.
+Components:
+1. Memory - key:value pair
+  Functions are stored here.
+  Also known as Variable environment : Functions + variables
+2. Code - Executed line by line
+  Thread of execution
+
+Synchronous - Runs in a specific order.
+Single Threaded Language - One command at a time
+
+
