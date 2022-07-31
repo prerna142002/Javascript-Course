@@ -1,0 +1,11 @@
+There are 2 phases when we run the program:
+  Memory reation Phase
+    Whenever the variable i creted then it is marked as undefined and for function the while code is saved.
+  Code
+    The variables are assigned the value.
+Functions:
+  Function Invoction - See a function with paramters
+  Functions are heart of JS. They behve very differently than any other language.
+  When a new function is invoked then the new execution context is created.
+  
+  
