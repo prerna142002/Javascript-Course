@@ -15,3 +15,23 @@ Result in other languages - Error
 Result in JS - 
 Javascript
 undefined.
+
+
+This concept is Hoisting - Phenomena of accesing the elemenst before even we have intialized it and without nay error.
+
+Difference between not-defined and udndefined:
+not-defined - if value is not intilizaed but we are trying to access it. 
+
+<script>
+getName();
+console.log(x);
+
+var x = 7;
+var getName() = () => {
+  console.log("Javascript"):
+} // This will now behave as a variable.
+
+</script>
+This will say that getName is not function.
+
+
