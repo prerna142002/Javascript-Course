@@ -14,6 +14,8 @@ Functions:
   
   
   CALL STACK -  This will manage the whole thing like when there are execution context wihtin one another.
-  
+    Managing execution context.
+    Whenever new exectuion context is reated then added to the stack. and when over then pop.
+    Other names - Execution Context Stack, Program Stack, COntorl Stack, Runtime Stack, Machine Stack.
   
   
