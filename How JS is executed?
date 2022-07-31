@@ -7,5 +7,13 @@ Functions:
   Function Invoction - See a function with paramters
   Functions are heart of JS. They behve very differently than any other language.
   When a new function is invoked then the new execution context is created.
+  Phase 1 : The argument is already assigned the value but the variable is undefined.
+  Phase 2 : The caluclations are performed and replace the value present in memory.
+  Return keyword returns the control to the function where it was invoked.
+  After that the whole execution context is deleted.
+  
+  
+  CALL STACK -  This will manage the whole thing like when there are execution context wihtin one another.
+  
   
   
