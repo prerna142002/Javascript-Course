@@ -1,0 +1,11 @@
+The empty file is shortest JS Program.
+JS Engine still does it works and sets up memory space with Execution context.
+Also creates something as window.
+  Functions and variables are created in Window.
+  Given by JS Engine.
+  Also create this keyword. 
+Whenever JS runs then Global Execution context global variable, this variable is also created.
+Every browser has different JS Engine so to create a global object to intercat and take repsonsibity for each.
+in Global -> this === window (Function execution Context + Global Execution Context)
+Global Space -> Anywhere but not in function.
+  Get attahced to Global variable window
