@@ -27,4 +27,5 @@ Lexical = Hierarchy/Order. Where the code is present physically inside the code.
 c function is lexically inside a function. 
 Whenever the memory space is created then lexical environment reference is also given.
 
-Scope Chain is the reference chain of various lexical environmnet 
+Scope Chain is the reference chain of various lexical environment.
+Anonymous = Global Execution Context.
