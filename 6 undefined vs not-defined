@@ -18,4 +18,9 @@ The variable is given as undefined in the memory execution phase.
  
  Output => a is not undefined
  
- JS is loosely typed language - don't attach to a particular data-type. ( we can add string/double/boolean )
+ JS is loosely/weakly typed language - don't attach to a particular data-type. ( we can add string/double/boolean according to our needs.)
+ Stronger as manages Behind the Scenes and handles the complexity.
+ 
+DONT do a=undefined; => Non-conventional way. Because this is reserved keyword meant to know whether variable was given a value.
+ 
+ 
