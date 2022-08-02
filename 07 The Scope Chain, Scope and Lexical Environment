@@ -1,0 +1,19 @@
+<script>
+  function a(){
+    console.log(b);
+   }
+  var b = 10;
+  a();
+</script>
+
+The b in function can access the b outside.
+
+<script>
+  function a(){
+      function b(){
+        console.log(b);
+      }
+   }
+  var b = 10;
+  a();
+</script>
