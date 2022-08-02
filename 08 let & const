@@ -1,0 +1,11 @@
+Introduced in ES6.
+let and const declarations = hoisted and in temporal dead zone for time being and behaves differently as compared to val.
+
+<script>
+  let a = 10; // This is also hoisted but cannot be accessed before initilization.
+  var b = 10; // Can access the value in hoisting before code is executed.
+</script>
+
+REASON:
+They are not in GLOBAL space but are declare in a diffent space.
+TEMPORAL DEAD ZONE : Time since when the let variable was hoisted and till it is inializethe vlaue.
