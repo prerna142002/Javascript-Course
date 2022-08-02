@@ -10,10 +10,21 @@ The b in function can access the b outside.
 
 <script>
   function a(){
-      function b(){
+      c();
+      function c(){
         console.log(b);
       }
    }
   var b = 10;
   a();
 </script>
+
+SCOPE = Where we can access a variable in a code.
+
+Wherever the Global Execution is cretaed the Lexical environment is also created.
+Lexical Environment = Local memory + Lexical Environment of its parent.
+Lexical = Hierarchy/Order. Where the code is present physically inside the code.
+c function is lexically inside a function. 
+Whenever the memory space is created then lexical environment reference is also given.
+
+Scope Chain is the reference chain of various lexical environmnet 
