@@ -1,0 +1,21 @@
+The variable is given as undefined in the memory execution phase.
+ 
+ <script>
+  var a;
+  console.log(a);
+  if(a == undfined) console.log("a is undefined");
+  else console.log("a is not undefined");
+ </script>
+ 
+ Output => a is undefined
+  
+ <script>
+  var a;
+  a=10;
+  if(a == undfined) console.log("a is undefined");
+  else console.log("a is not undefined");
+ </script>
+ 
+ Output => a is not undefined
+ 
+ JS is loosely typed language - don't attach to a particular data-type. ( we can add string/double/boolean )
