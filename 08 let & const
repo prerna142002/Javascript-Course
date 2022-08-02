@@ -22,3 +22,8 @@ The var varibale is not attached to the window.
 
 We cannot declare the let varibale again. Says is the syntax error.
 const behaves same as let. We need to intialized in same line.
+
+Syntax, Type and Reference Error.
+
+To avoid errors:
+1. Declare and intialize the values on the top.
