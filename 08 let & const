@@ -8,4 +8,17 @@ let and const declarations = hoisted and in temporal dead zone for time being an
 
 REASON:
 They are not in GLOBAL space but are declare in a diffent space.
-TEMPORAL DEAD ZONE : Time since when the let variable was hoisted and till it is inializethe vlaue.
+TEMPORAL DEAD ZONE : Time since when the let variable was hoisted and till it is inialized the value.
+This gives Reference Error which is similar when the value was "not defined". means the varibale is not present. But the message
+is different cannot access the value before initialization.
+
+The var varibale is not attached to the window.
+<script>
+  let a = 10; // This is also hoisted but cannot be accessed before initilization.
+  var b = 10; // Can access the value in hoisting before code is executed.
+  window.a; // undefined
+  window.b; // 10
+</script>
+
+We cannot declare the let varibale again. Says is the syntax error.
+const behaves same as let. We need to intialized in same line.
