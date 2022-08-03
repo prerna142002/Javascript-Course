@@ -1,1 +1,117 @@
+BLOCK:
+Known as compound statements.
+It combine multiple lines into one group.
+We need to gorup so we can use mutilple statements where JS expects one statement instaed of many.
+
+Defined by curly braces
+<script>
+  if(true)
+</script>
+
+This gives error because JS expects 1 statement.
+
+<script>
+  if(true)
+  {
+    var a = 10;
+    console.log(a);
+  }
+</script>
+
+Here it requires only 1 statement but we need to perform many statements. So we make a block.
+
+BLOCK SCOPE: The variabeles we can acess inside the block.
+<script>
+{
+  var a = 10;
+  let b = 20;
+  const c = 30;
+  console.log(a);
+  console.log(b);
+  console.log(c);
+ }
+  console.log(a);
+  console.log(b);
+  console.log(c);
+</script>
+
+OUTPUT:
+10
+20
+30
+10
+ERROR
+
+let and const are hoisted in the block scope in a separate memory space and a is hoisted in the global scope.
+But outside the scope we can only access a.
+
+SHADOWING: same named variable outside the block then the variable outside is shadowed by the variable inside the block.
+So the value is modified. Because the variable is pointing to the same reference of memory location.
+
+<script>
+var a = 100;
+let b = 100; // Outside the gloabl scope and in script scope.
+{
+  var a = 10;
+  let b = 20;
+  const c = 30;
+  console.log(a);
+  console.log(b);
+ }
+  console.log(a);
+  console.log(b);
+</script>
+
+OUTSIDE:
+10
+20
+10
+100
+
+The b in the bock is shadowing the value present outside the scope.
+
+ILLEGAL SHADOWING:
+<script>
+let b = 100; // Outside the gloabl scope and in script scope.
+{
+  var b = 20;
+ }
+</script>
+
+Gives Error.
+
+<script>
+var b = 100; // Outside the gloabl scope and in script scope.
+{
+  let b = 20;
+ }
+</script>
+
+No Error
+Doesnot cross the boundary of the variable.
+
+<script>
+let b = 100; // Outside the gloabl scope and in script scope.
+function m(){
+  var b = 20;
+ }
+</script>
+
+No Error
+Doesnot cross the boundary of the variable.
+
+Each block whether nested also has their own memory space.
+
+The scope rules in function made using arrow or using fuction keyword are same.
+
+
+
+
+
+
+
+
+
+
+
 
