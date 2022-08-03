@@ -1,0 +1,80 @@
+<script>
+function x(){
+  var a = 7;
+  function y(){
+    console.log(a);
+    }
+   y();
+}
+x();
+</script>
+
+CLOSURE - The function bind with lexical environment.
+// We can pass function as paramter or return the function.
+
+<script>
+ function x(){
+  var a = 7;
+  function y(){
+    console.log(a);
+  }
+  return y;
+ }
+ z();
+</script>
+
+OUTPUT:
+7
+
+The function y remembers the lexical environent that is closure.
+
+Corner Case:
+
+<script>
+ function x(){
+  var a = 7;
+  function y(){
+    console.log(a);
+  }
+  a=100;
+  return y;
+ }
+ z();
+</script>
+
+OUTPUT:
+100
+Because a is the reference to that varibale in the memory location.
+
+<script>
+ function z(){
+  var b = 900;
+  function x(){
+    var a = 7;
+    function y(){
+      console.log(a,b);
+    }
+    y();
+  }
+  x();
+ }
+ z();
+ 
+</script>
+
+OUTPUT:
+900 7
+y is with closure of x and z.
+
+Common uses of closure:
+1. Module design pattern.
+2. Currying
+3. Function like once - gives a function that can only run once.
+4. Memoize
+5. Maintaining state is async world.
+6. setTimeouts
+7. Iterators 
+            ......
+
+
+
