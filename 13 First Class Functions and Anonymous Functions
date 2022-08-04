@@ -1,3 +1,5 @@
+Functions are 1st class citizens.
+
 FUNCTION STATEMENT/FUNCTION DECLARATION:
 ------------------
 <script>
@@ -72,6 +74,7 @@ The identifier/label present in the function curly braces is the parameter.
 FIRST CLASS FUNCTIONS:
 ---------------------
 The ability to use the function as values is known as First Class Function.
+This makes the functions as 1st class citizen.
 We can pass the functions as the argument of other function.
 We can also return a function 
 <script>
@@ -89,7 +92,8 @@ We can also return a function
   
 </script>
 
-
+ARROW FUNCTIONS:
+---------------
 
 
 
