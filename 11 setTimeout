@@ -1,0 +1,29 @@
+<script>
+  var i = 1;
+  setTimeout(function(){
+    console.log(i);
+   }, 1000);
+}
+x();
+</script>
+
+Will print the value after the time limit given in the funciton.\
+The timer doesnot run on the program. Means it will not wait for 3000 miliseconds and then run the program.
+
+<script>
+  var i = 1;
+  setTimeout(function(){
+    console.log(i);
+   }, 1000);
+   console.log("Prerna");
+}
+x();
+</script>
+
+OUTPUT:
+Prerna
+1
+
+Time, tide and javascript does not wait for anything.
+The function will remember by making closure.
+setTimeOut takes the callback fucntion and stores it somewhere else and attaches a timer to it.
