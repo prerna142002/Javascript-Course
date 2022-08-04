@@ -70,3 +70,8 @@ Prerna
 4
 5
 
+Let has the block scope. Each and every loop this "i" is a new copy. The call back function "i" is having its own identity. Forms a closure with the new variable.
+Does not point to the global memory.
+
+
+
