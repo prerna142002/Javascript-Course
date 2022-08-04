@@ -27,3 +27,6 @@ Prerna
 Time, tide and javascript does not wait for anything.
 The function will remember by making closure.
 setTimeOut takes the callback fucntion and stores it somewhere else and attaches a timer to it.
+Then goes in call stack when time is finished.
+
+
