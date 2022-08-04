@@ -74,4 +74,26 @@ Let has the block scope. Each and every loop this "i" is a new copy. The call ba
 Does not point to the global memory.
 
 
+<script>
+function x(){
+  for(var i = 0; i<=5;i++){
+    function close(i){
+    setTimeout(function() {
+      console.log(i);
+    }, i*1000);
+   }
+   close(i);
+  }
+  console.log("Prerna");
+ }
+</script>
+
+OUTPUT:
+Prerna
+1
+2
+3
+4
+5
+
 
