@@ -44,7 +44,9 @@ Does not have its own identity. It looks liek the funcion statement
 </script>
 
 According to the law function must have a name.
-Are used where functions are used as values.
+Are used where functions are used as values can assign to a variable.
+Acts as a value.
+
 
 
 
