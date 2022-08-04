@@ -1,0 +1,56 @@
+FUNCTION STATEMENT/FUNCTION DECLARATION:
+------------------
+<script>
+function name_of_function(){
+  console.log("function");
+}
+</script>
+
+
+FUNCTION EXPRESSION:
+-------------------
+<script>
+  var b = function functionName(){
+    console.log("function");
+   }
+</script>
+
+The difference between these 2 are hoisting.
+
+<script>
+name_of_function();
+functionName();
+function name_of_function(){
+  console.log("function1");
+}
+  var b = function functionName(){
+    console.log("function2");
+   }
+</script>
+
+OUTPUT:
+function1
+Uncaught TypeError
+
+ANONYMOUS FUNCTION:
+------------------
+Does not have its own identity. It looks liek the funcion statement
+
+<script>
+  function() { // This will give error
+  
+  }
+
+</script>
+
+According to the law function must have a name.
+Are used where functions are used as values.
+
+
+
+
+
+
+
+
+
