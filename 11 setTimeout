@@ -29,4 +29,44 @@ The function will remember by making closure.
 setTimeOut takes the callback fucntion and stores it somewhere else and attaches a timer to it.
 Then goes in call stack when time is finished.
 
+<script>
+function x(){
+  for(var i = 0; i<=5;i++){
+    setTimeout(function() {
+      console.log(i);
+    }, i*1000);
+  }
+  console.log("Prerna");
+ }
+</script>
+
+OUTPUT:
+Prerna
+6
+6
+6
+6
+6
+
+Function is taken out of the the scope then also the lexcial environment is attached and closure also. The loop will run again and again as JS will not wait for
+anything.
+
+<script>
+function x(){
+  for(let i =0; i<=5;i++){
+    setTimeout(function() {
+      console.log(i);
+    }, i*1000);
+  }
+  console.log("Prerna");
+ }
+</script>
+
+OUTPUT:
+Prerna
+1
+2
+3
+4
+5
 
