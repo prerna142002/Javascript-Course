@@ -48,6 +48,17 @@ Are used where functions are used as values can assign to a variable.
 Acts as a value.
 
 
+NAMED FUNCTION EXPRESSION:
+-------------------------
+<script>
+  var b = function xyz(){
+    console.log(xyz); // Will return the function 
+   }
+   
+   b();
+   xyz(); // Will return the REFRENCE ERROR.
+</script>
+
 
 
 
