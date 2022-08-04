@@ -59,9 +59,35 @@ NAMED FUNCTION EXPRESSION:
    xyz(); // Will return the REFRENCE ERROR.
 </script>
 
+PARAMETER AND ARGUMENTS DIFFERENCE:
+----------------------------------
+The identifier/label present in the function curly braces is the parameter.
+<script>
+  var b = function(param1,param2){
+    console.log("b called");
+  }
+  b(arg1,arg2); // These are arguments.
+</script>
 
-
-
+FIRST CLASS FUNCTIONS:
+---------------------
+The ability to use the function as values is known as First Class Function.
+We can pass the functions as the argument of other function.
+We can also return a function 
+<script>
+  function a(param1){
+    console.log(param1);
+    return function() {
+      
+    }
+  }
+  
+  function bb(){
+  }
+  
+  console.log(a(bb));
+  
+</script>
 
 
 
