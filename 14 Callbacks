@@ -1,0 +1,41 @@
+Functions are 1st class citizens.
+CALLBACK FUNCTIONS:
+When we add function in the function is known as the callback function.
+It is powerful as it gives asynchronous world in the single threaded synchronous call.( can do one thing at a time and in order).
+<script>
+  funcion x(){
+  
+  }
+  x(function y()){
+  
+  })
+</script>
+
+
+<script>
+  setTimeout(funciton () {
+    console.log("timer");
+   }, 5000);
+   
+   function x(y){
+      console.log("x");
+    }
+    x(fucnction y() {
+      console.log("y");
+     });
+     
+</script>
+
+OUTPUT:
+x
+y
+timer
+
+BLOCKING THE MAIN THREAD
+
+
+
+POWER OF CALLABACKS
+
+
+DEE ABOUT EVENT LISTENERS
