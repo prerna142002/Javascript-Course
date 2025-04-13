@@ -1,0 +1,9 @@
+Js Runtime environment:
+contains everything required to run JS.
+1. JS Engine - heart of the Runtime Env
+2. Set of APIs to connect to outer env
+3. Evemt Loop
+4. Callback
+5. Micro tasking
+
+Container has everything but not possible without JS engine
